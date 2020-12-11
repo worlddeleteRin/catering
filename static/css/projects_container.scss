@@ -1,0 +1,58 @@
+@import './vars.scss';
+
+.projects__main__wrapper {
+    margin: 20 0 5 0;
+    padding: 20 0 5 0;
+    /* background-color: $bg-nice; */
+}
+.projects_list {
+    margin: 40 auto 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.project {
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5;
+    width: 30%;
+    max-width: 381px;
+    min-width: 300px;
+    position: relative;
+    &__image {
+        max-width: 100%;
+        position: relative;
+        overflow: hidden;
+        img {
+            min-height: 300px;
+            max-width: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            transition: transform 0.5s;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+.project__title {
+    text-align: center;
+    min-height: 40px;
+    width: 90%;
+    padding: 10 10 20 10;
+}
+.project__title span {
+    text-align: center;
+    color: black;
+    bottom: 10;
+    font-family: "main_medium";
+    display: inline-block;
+    font-weight: 900;
+    font-size: 1.0375rem;  
+}

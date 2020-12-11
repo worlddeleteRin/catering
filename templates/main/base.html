@@ -1,0 +1,64 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кейтеринг в Крыму</title>
+</head>
+<body>
+
+{% include './includes_css.html' %}
+{% include './includes_js.html' %}
+
+
+
+{% block header %}
+    <div class="main__header__block__wrapper">
+
+    <div id="scroll_to_top"></div>
+
+    <div class="main__header__block">
+        {% include './blocks/header.html' %}
+    </div>
+{% endblock header %}
+
+
+{% block content %}
+{% endblock content %}
+
+{% include './blocks/popup_form.html' %}
+
+</body>
+
+<script>
+$(".callme_link").click(function() {
+        current_form = $("#main__popup")
+        showModal(current_form)
+    })
+
+    $(".pform__wrap__close").click(function() {
+    closeModal()
+})
+    $(".pform__wrap__wrapper").click(function() {
+    closeModal()
+})
+
+
+function showModal(item) {
+    $(item).addClass("show")
+    $(".pform__wrap__wrapper").addClass("show")
+}
+function closeModal() {
+    $(".pform__wrap").removeClass("show")
+    $(".pform__wrap__wrapper").removeClass("show")
+}
+
+$(".pform__wrap__close").click(function() {
+    closeModal()
+})
+$(".pform__wrap__wrapper").click(function() {
+    closeModal()
+})
+</script>
+
+</html>

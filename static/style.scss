@@ -1,0 +1,332 @@
+@import './css/vars.scss';
+@import './css/header.scss';
+@import './css/fonts.scss';
+@import './css/case_main.scss';
+@import './css/projects_container.scss';
+@import './css/services.scss';
+@import './css/menu_block.scss';
+@import './css/action_call.scss';
+@import './css/contacts_container.scss';
+@import './css/adv_container.scss';
+@import './css/popup_form.scss';
+
+
+
+.nice__title2__left {
+    text-align: left;
+    font-size: 30px;
+    text-size-adjust: 100%;
+    font-family: $main-medium;
+}
+.nice__title__center {
+    text-align: center;
+    font-size: 24px;
+    font-family: $main-medium;
+}
+.nice__title__center2 {
+    text-align: center;
+    font-size: 30px;
+    font-family: $main-medium;
+    color: $main-color;
+    text-transform: uppercase;
+}
+.nice__title__center3 {
+    text-align: center;
+    font-size: 30px;
+    font-family: $main-medium;
+    color: $main-color;
+    text-transform: uppercase;
+    span {
+    border-bottom: 3px dashed $main-color;
+    }
+}
+
+.space__20 {
+    visibility: hidden;
+    display: flex;
+    margin: 20 0;
+}
+.space__10 {
+    visibility: hidden;
+    display: flex;
+    margin: 10 0;
+}
+
+.main__header__block__wrapper {
+    // display: flex;
+    margin: 0px auto;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 95%;
+    background-color: white;
+}
+
+.main__site__wrapper__main.bg1 {
+    background-color: $bg-nice;
+}
+
+.main__site__wrapper {
+    margin: 30px auto;
+    position: relative;
+    display: block;
+    max-width: 1400px;
+}
+
+.in__cart__buttonstyle {
+    background-color: rgb(240,241,243)!important;
+    color: $main-color!important;
+    font-family: $main-medium;
+}
+
+.owl__nav {
+    border-radius: 5px;
+    padding: 7px;
+    background-color: $main-color;
+    position: absolute;
+    bottom: -35;
+    z-index: 9999999;
+    &__left {
+        left: 35%;
+    }
+    &__right {
+        right: 35%;
+    }
+    i {
+        transform: scale(1.3);
+        // color: $main-color;
+        color: white;
+    }
+    &:hover {
+        background-color: $main-color;
+    }
+}
+
+.product__not__in__cart.hide {
+    display: none;
+}
+.product__in__cart {
+    visibility: hidden;
+    position: absolute;
+}
+.product__in__cart.show {
+    position: relative;
+    visibility: visible;
+}
+
+
+
+.add_delete_favorite.red {
+    color: red;
+    transition: all 0.3s;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+.add_delete_favorite.white {
+    color: blue;
+    transition: all 0.3s;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+// subheader here
+
+.empty__cart__container {
+    display: none;
+}
+.empty__cart__container.show {
+    min-height: 300px;
+    display: block;
+}
+
+.cart__main {
+    min-height: 450px;
+}
+.cart__main.hide {
+    display: none;
+}
+.hot__container {
+    // background-color: $bg-nice3;
+}
+.margin__auto {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+.error__message {
+    display: none;
+    margin: 10 0;
+    span {
+        border-radius: 7px;
+        color: white;
+        background-color: red;
+        padding: 5 10;
+    }
+}
+.error__message.show {
+    display: flex;  
+}
+
+
+#owl-main .owl-item div{
+    padding: 5px;
+  } 
+
+@media (max-width: 1000px) {
+    #owl-main .owl-item div {
+        padding: 20 5 20 5;
+    } 
+}
+  #owl-main .owl-item img {
+    // display: block;
+    width: 100%;
+    height: auto;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+
+// .stuck {
+// 	position:fixed;
+// 	top:0;
+// 	width: 100%;
+// 	z-index: 999;
+//   }
+
+.loader {
+    /* margin: 0 0 2em; */
+    /* height: 100px; */
+    width: 20%;
+    text-align: center;
+    /* padding: 1em; */
+    /* margin: 0 auto 1em; */
+    // display: inline-block;
+    vertical-align: top;
+    fill: orange;
+    display: none;
+    svg path {
+        fill: black;
+    }
+  }
+  .loader.show {
+    display: inline-block;
+  }
+  .loader.white {
+      svg path {
+        fill: white;
+      }
+  }
+
+.nice_title {
+    overflow: hidden;
+    max-width: 100%;
+    margin: 20 0 20 0;
+}
+.nice_title span {
+    max-width: 100%;
+    font-family: "main_bold";
+    display: inline-block;
+    font-weight: 900;
+    font-size: calc(2.4375rem + 1vw);
+    background-image: linear-gradient(to bottom, transparent 30%, #f0a7a7 21%);
+    background-position: 0 90%;
+    background-repeat: no-repeat;
+    background-size: 0% 0.875rem;
+    transition: background-size 0.8s ease-in-out 0.6s;
+    background-size: 100% 2rem;
+    transition-delay: 0s;
+}
+.nice_title.center {
+    text-align: center;
+}
+.nice_title.blue span {
+    background-image: linear-gradient(to bottom, transparent 30%, #8295e1 21%);
+}
+.nice_title.orange span {
+    background-image: linear-gradient(to bottom, transparent 30%, #ff9e7a 21%);
+}
+.nice_title.green span {
+    background-image: linear-gradient(to bottom, transparent 30%, #7affab 21%);
+}
+.nice_title.middle span {
+    font-size: calc(1.7375rem + 1vw);
+    background-position: 0 150%;
+}
+
+.wrap_pad15 {
+    padding: 15 0;
+}
+
+.regular_title {
+    text-align: center;
+    span {
+        font-family: 'main_ebold';
+        color: $nice-yellow;
+        font-size: calc(33px + 1vw);
+    }
+}
+.page_header__container {
+    background-color: $bg-nice;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    span {
+        font-size: calc(50px + 1vw);
+        font-family: 'main_ebold';
+    }
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+.products__list {
+    margin: 40 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+}
+body {
+    font-family: "main_medium";
+    // font-weight: 900;
+}
+body.hidden {
+    overflow: hidden;
+}
+
+
+.about_us_container {
+    background-color: $bg-nice;
+    padding: 120 0 90 0;
+}
+.about_us_title {
+    text-align: center;
+    font-family: 'main_ebold';
+    font-size: calc(60px + 1vw);
+}
+.about_us_description {
+    padding: 40 40;
+    font-size: calc(16px + 0.7vw);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

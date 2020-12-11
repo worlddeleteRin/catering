@@ -1,0 +1,30 @@
+{% load static %}
+
+<div class="menu_block_wrapper wrap_pad15">
+    <div class="nice_title center orange">
+        <span>
+        Меню
+        </span>
+    </div>
+
+    <div class="menu__container">
+        <img class="menu__container__img"
+        src="{% static 'images/menu_container_banner.png' %}" alt="">
+        <div class="menu__blocks">
+            <div class="menu__blocks__sub owl-carousel owl-theme">
+            {% for item in somelist  %}
+            {% include './menu_single.html' %}
+            {% endfor %}
+            </div>
+            <div class="menu__link">
+                <a class="custom-btn btn-14"
+                href="{% url 'main:products' %}">
+                    Смотреть все
+                </a>
+            </div>
+        </div>
+        
+
+    </div>
+
+</div>

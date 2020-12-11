@@ -1,0 +1,52 @@
+.action_call_wrapper {
+  background-color: #005bff;
+  padding: 70;
+}
+@media (max-width: 563px) {
+  .action_call_wrapper {
+    padding: 70 10;
+  }
+}
+
+.action_call_button {
+  padding: 50 20;
+  text-align: center;
+}
+@media (max-width: 563px) {
+  .action_call_button {
+    padding: 50 2;
+  }
+}
+
+.action_call_title {
+  margin: 0px auto;
+  width: 80%;
+  color: white;
+  font-family: "main_ebold";
+  text-align: center;
+  font-size: calc(20px + 1.6vw);
+  font-weight: 900;
+}
+@media (max-width: 725px) {
+  .action_call_title {
+    width: 95%;
+  }
+}
+@media (max-width: 563px) {
+  .action_call_title {
+    width: 99%;
+  }
+}
+
+.style_2 {
+  font-size: 20px;
+  background-color: white;
+  border-color: white;
+}
+.style_2:hover {
+  border-color: red;
+}
+.style_2:after {
+  background-color: red;
+  background-image: linear-gradient(315deg, red 0%, red 74%);
+}

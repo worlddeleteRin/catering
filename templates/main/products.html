@@ -1,0 +1,14 @@
+{% extends './base.html' %}
+
+{% block content %}
+
+    {% include './blocks/page_header.html' %}
+
+    <div class="products__list">
+        {% for item in somelist  %}
+        {% include './blocks/menu_single.html' %}
+        {% endfor %}
+    </div>
+
+
+{% endblock content %}
