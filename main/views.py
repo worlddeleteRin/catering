@@ -17,17 +17,21 @@ from django.conf import settings
 
 def index(request):
     template = "main/index.html"
-    somelist = [1,3,4,5,6,7]
+    products = Product.objects.all()
+    somelist = [1,2,3,4]
     context = {
+        'products': products,
         'somelist': somelist,
     }
     return render(request, template, context)
 
 def products(request):
     template = "main/products.html"
-    somelist = [1,3,4,5,6,7]
+    products = Product.objects.all()
+    somelist = [1,2,3,4]
     context = {
         'somelist': somelist,
+        'products': products,
     }
     return render(request, template, context)
 

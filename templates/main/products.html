@@ -5,10 +5,12 @@
     {% include './blocks/page_header.html' %}
 
     <div class="products__list">
-        {% for item in somelist  %}
+        {% for product in products  %}
         {% include './blocks/menu_single.html' %}
         {% endfor %}
     </div>
 
 
+    {% include './blocks/action_call.html' %}
+    
 {% endblock content %}

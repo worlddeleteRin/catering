@@ -1,0 +1,14 @@
+@import './vars.scss';
+.about_us_container {
+    background-color: $bg-nice;
+    padding: 120 0 90 0;
+}
+.about_us_title {
+    text-align: center;
+    font-family: 'main_ebold';
+    font-size: calc(60px + 1vw);
+}
+.about_us_description {
+    padding: 40 40;
+    font-size: calc(16px + 0.7vw);
+}

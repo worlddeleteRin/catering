@@ -31,6 +31,11 @@
 </body>
 
 <script>
+    var sticky = new Waypoint.Sticky({
+    element: $('.main__header__block'), // Add in your CSS selector sticky target
+    // direction: 'down right',
+  })
+  
 $(".callme_link").click(function() {
         current_form = $("#main__popup")
         showModal(current_form)

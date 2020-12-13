@@ -12,7 +12,7 @@
         src="{% static 'images/menu_container_banner.png' %}" alt="">
         <div class="menu__blocks">
             <div class="menu__blocks__sub owl-carousel owl-theme">
-            {% for item in somelist  %}
+            {% for product in products  %}
             {% include './menu_single.html' %}
             {% endfor %}
             </div>

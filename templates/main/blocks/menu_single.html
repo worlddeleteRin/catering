@@ -1,15 +1,20 @@
+{% load static %}
+{% load main_extras %}
 <div class="menu__block">
     <div class="menu__block__image">
-        <img src="https://placehold.it/1000x1000" alt="">
+    {% modify_imgsrc product.imgsrc as imgsrc %}
+        <img src="{{ imgsrc }}" alt="">
     </div>
+    <div class="info__block">
     <div class="menu__block__title">
         <span>
-        Название продукта
+        {{ product.name }}
         </span>
     </div>
     <div class="menu__block__price">
         <span>
-            110 р.
+            {{ product.price }} &#x20BD;
         </span>
+    </div>
     </div>
 </div>

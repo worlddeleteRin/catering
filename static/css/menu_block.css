@@ -24,9 +24,12 @@
 }
 
 .menu__block {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   margin: 10;
   min-width: 260px;
   max-width: 260px;
+  height: 320px;
   width: 30%;
   overflow: hidden;
 }
@@ -35,9 +38,18 @@
   overflow: hidden;
 }
 .menu__block__image img {
-  max-width: 280px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 180px;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
+}
+.menu__block__title {
+  font-size: 14px;
+}
+
+.info__block {
+  margin-top: 5px;
 }
 
 .menu__link {
