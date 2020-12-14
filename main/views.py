@@ -17,7 +17,7 @@ from django.conf import settings
 
 def index(request):
     template = "main/index.html"
-    products = Product.objects.all()
+    products = Product.objects.all()[:10]
     somelist = [1,2,3,4]
     context = {
         'products': products,
